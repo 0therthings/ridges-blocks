@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sojourn/testimonial",
+  "version": "0.1.0",
+  "title": "Testimonial",
+  "category": "sojourn",
+  "icon": "admin-comments",
+  "description": "This is a simple block to showcase reviews from customers or the press",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "testimonial",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "quote": {
+      "type": "string",
+      "source": "html",
+      "selector": "blockquote"
+    },
+    "citation": {
+      "type": "string",
+      "source": "html",
+      "selector": "cite"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "cfp/news-alert",
+	"version": "0.1.0",
+	"title": "News Alert",
+	"category": "cfp",
+	"icon": "info",
+	"description": "A news alert block is a full-width banner that editors can drop into a page to draw attention to an important announcement. The block includes a button and an optional icon.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "news-alert",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"message": {
+			"type":"string",
+			"source": "html",
+			"selector": ".news-alert__message p",
+			"default": "News alert headline lorem ipsum dolor siti amet"
+		},
+		"isButtonEnabled": {
+			"type": "boolean",
+			"default": true
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Learn More"
+		},
+		"buttonURL": {
+			"type": "string"
+		},
+		"buttonTarget": {
+			"type": "string",
+			"default": "_self"
+		},
+
+		"isCustomImage": {
+			"type": "boolean",
+			"default": false
+		},
+		"imageURL": {
+			"type": "string",
+			"default": ""
+		},
+		"imageID": {
+			"type": "integer"
+		}
+	}
+}

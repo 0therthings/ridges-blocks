@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "brushwood/tabs",
+	"version": "0.1.0",
+	"title": "Tabs",
+	"category": "brushwood",
+	"icon": "index-card",
+	"description": "This block creates the structure for a tabbed menu",
+	"supports": {
+		"html": false
+	},
+	"keywords": [ "tab", "tabbed content", "menu"],
+	"textdomain": "tabs",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes":{
+		"tabLabelsArray":{
+			"type": "array",
+			"default": []
+		},
+		"updateChild":{
+			"type": "boolean",
+			"default": false
+		},
+		"sideTabLayout":{
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

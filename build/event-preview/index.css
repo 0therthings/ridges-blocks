@@ -1,0 +1,50 @@
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/event-preview/editor.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.editor-styles-wrapper .wp-block-sojourn-event-preview {
+  border: 1px solid hsl(36, 34%, 67%);
+}
+
+.editor-styles-wrapper .event-preview__content {
+  padding: 3rem;
+}
+
+.editor-styles-wrapper .button-upload {
+  display: flex;
+  align-items: center;
+}
+
+.editor-styles-wrapper .button-upload svg {
+  margin-right: 4px;
+  transform: translateY(-1px);
+}
+
+.image-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+button.remove-image {
+  position: absolute;
+  top: 0;
+}
+
+@media only screen and (min-width: 76rem) {
+  .event-preview__image {
+    display: grid;
+    place-content: center;
+  }
+}
+
+/*# sourceMappingURL=index.css.map*/

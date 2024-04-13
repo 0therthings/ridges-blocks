@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sojourn/framed-heading",
+	"version": "0.1.0",
+	"title": "Framed Heading",
+	"category": "sojourn",
+	"icon": "heading",
+	"description": "This block allows you to create a page heading wrapped inside a tapered shape",
+	"supports": {
+		"html": false
+	},
+	"keywords": [ "framed", "heading", "shape"],
+	"textdomain": "framed-heading",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"borderColor": {
+			"type": "string",
+			"default": "sand"
+		}
+	}
+}

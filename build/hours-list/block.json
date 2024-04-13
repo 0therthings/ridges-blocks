@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sojourn/hours-list",
+  "version": "0.1.0",
+  "title": "Hours List",
+  "category": "sojourn",
+  "icon": "clock",
+  "description": "This block lists daily restaurant hours set in the WordPress customizer",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "hours-list",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

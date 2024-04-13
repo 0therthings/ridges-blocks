@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.editor-styles-wrapper .news-alert {
+  padding: 1.5rem;
+}
+
+@media only screen and (min-width: 64rem) {
+
+  .editor-styles-wrapper .news-alert {
+    padding: 1.5rem 2rem 1.5rem 2.5rem;
+  }
+
+  .editor-styles-wrapper .news-alert__icon {
+    margin-bottom: 0;
+  }
+
+}

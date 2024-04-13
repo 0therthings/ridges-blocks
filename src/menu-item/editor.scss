@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-sojourn-menu-item {
+	border: 1px dotted #f00;
+}
+
+.editor-styles-wrapper .menu-item__heading h3 {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-family: var(--work);
+  margin-bottom: 0;
+}

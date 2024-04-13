@@ -1,0 +1,37 @@
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/framed-heading/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-sojourn-framed-heading {
+  position: relative;
+  padding: 2px;
+  padding: 4.5rem 10%;
+  margin-bottom: 3rem;
+}
+
+.framed-heading-outline {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.framed-heading-outline path {
+  stroke: var(--border-color);
+}
+
+.wp-block-sojourn-framed-heading h1:last-child, .wp-block-sojourn-framed-heading h2:last-child, .wp-block-sojourn-framed-heading h3:last-child, .wp-block-sojourn-framed-heading h4:last-child, .wp-block-sojourn-framed-heading h5:last-child, .wp-block-sojourn-framed-heading h6:last-child, .wp-block-sojourn-framed-heading p:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

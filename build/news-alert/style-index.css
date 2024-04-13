@@ -1,0 +1,67 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/news-alert/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+.news-alert {
+  background-color: hsl(39, 30%, 82%);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.news-alert__icon {
+  width: 21px;
+  margin-bottom: 1rem;
+}
+
+.news-alert__icon[src=""] {
+  content: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJob3VyZ2xhc3MiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMSAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjEgMjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0M4QjE4RiIgZD0iTTE2LjA0LDExYy0wLjM2LDAuNjItMC4zNiwxLjM4LDAsMmw0LjYyLDgKCWMwLjc3LDEuMzMtMC4xOSwzLTEuNzMsM0gyYy0xLjU0LDAtMi41LTEuNjctMS43My0zbDQuNjItOGMwLjM2LTAuNjIsMC4zNi0xLjM4LDAtMkwwLjI3LDNDLTAuNSwxLjY3LDAuNDYsMCwyLDBoMTYuOTMKCWMxLjU0LDAsMi41LDEuNjcsMS43MywzTDE2LjA0LDExeiIvPgo8L3N2Zz4K);
+}
+
+.news-alert p {
+  font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 20rem) {
+  .news-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+  }
+  .news-alert__icon {
+    width: 21px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .news-alert {
+    align-items: center;
+    margin-top: 4.75rem;
+    margin-bottom: 4.75rem;
+  }
+  .news-alert__content {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .news-alert__message {
+    margin-right: 32px;
+  }
+  .news-alert p:last-of-type {
+    margin-bottom: 0;
+  }
+  .news-alert__content .wp-block-button {
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .news-alert {
+    padding: 1.5rem 2rem 1.5rem 2.5rem;
+  }
+  .news-alert p {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

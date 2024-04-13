@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sojourn/menu-item",
+  "version": "0.1.0",
+  "title": "Menu Item",
+  "category": "sojourn",
+  "icon": "carrot",
+  "description": "The menu item allows you to display a food or drink offering at Sojourn. Includes a title, price, description, add-on, and classifications (vegan, gluten-free, etc.).",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "menu-item",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".menu-item__heading h3",
+      "default": "Menu Item"
+    },
+    "price": {
+      "type": "string",
+      "source": "html",
+      "selector": ".menu-item__heading span",
+      "default": "X"
+    },
+    "recControl": {
+      "type": "boolean",
+      "default": false
+    },
+    "vegetarianControl": {
+      "type": "boolean",
+      "default": false
+    },
+    "veganControl": {
+      "type": "boolean",
+      "default": false
+    },
+    "glutenControl": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sojourn/menu-section",
+  "version": "0.1.0",
+  "title": "Menu Section",
+  "category": "sojourn",
+  "icon": "book",
+  "description": "This block creates a grid for menus items, and supports a title and description (Entrees, desserts, etc.).",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "menu-section",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".menu-section__intro h2"
+    },
+    "description": {
+      "type": "array",
+      "source": "children",
+      "selector": ".menu-section__description"
+    }
+  }
+}

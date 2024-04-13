@@ -1,0 +1,41 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-sojourn-menu-section {
+  margin-bottom: 1rem;
+}
+
+.menu-section__intro {
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+}
+
+.menu-section__description, .menu-section__description p {
+  color: var(--green);
+  font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 40rem) {
+
+  .menu-section__items {
+    display: grid;
+    gap: 0 4.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media only screen and (min-width: 68rem) {
+
+  .menu-section__items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}

@@ -1,0 +1,90 @@
+
+.news-alert {
+	background-color: hsl(39deg 30% 82%);
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	// padding: 2rem 1.5rem;
+	padding: 1.5rem;
+	border-radius: 4px;
+}
+
+.news-alert__icon {
+	// width: 55px;
+	width: 21px;
+	margin-bottom: 1rem;
+}
+
+.news-alert__icon[src=""] {
+content: url('./images/hourglass.svg');
+}
+
+.news-alert p {
+font-size: 1.125rem;
+// color: var(--dark-grey);
+// font-weight: 600;
+}
+
+// .news-alert .wp-block-button__link {
+// background-color: hsl(199deg 65% 84%);
+// }
+
+// .news-alert .wp-block-button__link:focus, .news-alert .wp-block-button__link:hover {
+// background-color: hsl(199deg 65% 80%);
+// }
+
+@media only screen and (min-width: 20rem) {
+
+	.news-alert {
+	  display: flex;
+	  align-items: flex-start;
+	  gap: 26px;
+	}
+
+	.news-alert__icon {
+	  width: 21px;
+	  margin-bottom: 0;
+	}
+
+}
+
+@media only screen and (min-width: 48rem) {
+
+	.news-alert {
+	  align-items: center;
+	  margin-top: 4.75rem;
+	  margin-bottom: 4.75rem;
+	}
+
+	.news-alert__content {
+	  display: flex;
+	  flex-grow: 1;
+	  align-items: center;
+	}
+
+	.news-alert__message {
+	  margin-right: 32px;
+	}
+
+	.news-alert p:last-of-type {
+	  margin-bottom: 0;
+	}
+
+	.news-alert__content .wp-block-button {
+	  margin-left: auto;
+	  flex-shrink: 0;
+	}
+
+}
+
+@media only screen and (min-width: 64rem) {
+
+	.news-alert {
+	  padding: 1.5rem 2rem 1.5rem 2.5rem;
+	}
+
+	.news-alert p {
+	  font-size: 1.5rem;
+	}
+
+}
+  

@@ -1,0 +1,79 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-sojourn-hours-list {
+	// background-color: #21759b;
+	// color: #fff;
+	// padding: 2px;
+  margin-bottom: 3rem;
+}
+
+.wp-block-sojourn-hours-list dl {
+  // background-color: hsl(39deg 33% 75%);
+  display: grid;
+  // grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
+  // gap: 0.35rem 0;
+  // margin-bottom: 1rem;
+  color: var(--green);
+  white-space: nowrap;
+  // padding: 0.65rem 20px;
+}
+
+.wp-block-sojourn-hours-list dt, .wp-block-sojourn-hours-list dd {
+  font-size: 1.125rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--sand-dark);
+}
+
+.wp-block-sojourn-hours-list dt {
+  padding-right: 1rem;
+}
+
+.wp-block-sojourn-hours-list dt:nth-last-child(2), .wp-block-sojourn-hours-list dd:last-child {
+  border-bottom: none;
+}
+
+// .utility__hours-drawer.active {
+//   display: grid;
+// }
+
+// .utility__hours-drawer dt {
+//   display: flex;
+//   align-items: baseline;
+// }
+
+// .utility__hours-drawer dt:after {
+//   content: '';
+//   display: inline-block;
+//   flex-grow: 1;
+//   height: 1px;
+//   background-color: hsl(39deg 33% 65%);
+//   margin-left: 20px;
+// }
+
+.sunday .wp-block-sojourn-hours-list .sunday {
+  font-weight: bold;
+}
+.monday .wp-block-sojourn-hours-list .monday {
+  font-weight: bold;
+}
+.tuesday .wp-block-sojourn-hours-list .tuesday {
+  font-weight: bold;
+}
+.wednesday .wp-block-sojourn-hours-list .wednesday {
+  font-weight: bold;
+}
+.thursday .wp-block-sojourn-hours-list .thursday {
+  font-weight: bold;
+}
+.friday .wp-block-sojourn-hours-list .friday {
+  font-weight: bold;
+}
+.saturday .wp-block-sojourn-hours-list .saturday {
+  font-weight: bold;
+}

@@ -1,0 +1,73 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.simple-grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.simple-grid--mobile-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.simple-grid--mobile-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+// Spacing
+
+.simple-grid.simple-grid--spacing-0 {
+	gap: 0;
+}
+
+.simple-grid.simple-grid--spacing-1 {
+	gap: var(--wp--preset--spacing--20);
+}
+
+.simple-grid.simple-grid--spacing-2 {
+	gap: var(--wp--preset--spacing--30);
+}
+
+.simple-grid.simple-grid--spacing-3 {
+	gap: var(--wp--preset--spacing--40);
+}
+
+.simple-grid.simple-grid--spacing-4 {
+	gap: var(--wp--preset--spacing--50);
+}
+
+.simple-grid.simple-grid--spacing-5 {
+	gap: var(--wp--preset--spacing--60);
+}
+
+.simple-grid.simple-grid--spacing-6 {
+	gap: var(--wp--preset--spacing--70);
+}
+
+@media only screen and (min-width: 782px) {
+
+	.simple-grid--2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.simple-grid--3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.simple-grid--4 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.simple-grid--5 {
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.simple-grid--6 {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+}

@@ -1,0 +1,64 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/event-preview/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-sojourn-event-preview {
+  border: 1px solid hsl(36, 34%, 67%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-preview__image {
+  position: relative;
+  padding-top: 103%;
+  overflow: hidden;
+  background-color: hsl(36, 34%, 67%);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxNC45OCAxNS4wOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQuOTggMTUuMDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjZThlMWQ0IiBkPSJNMTQuOTgsNi44N2MwLTAuNTktMC4xOC0xLjE2LTAuNTMtMS42NWMtMC4zNC0wLjQ4LTAuODMtMC44NC0xLjM5LTEuMDRjLTAuNTYtMC4xOS0xLjE3LTAuMjEtMS43NC0wLjA1CgljLTAuNTcsMC4xNi0xLjA4LDAuNS0xLjQ1LDAuOTZjMC4zOC0wLjQ1LDAuNjMtMC45OSwwLjcyLTEuNTdzMC0xLjE3LTAuMjQtMS43MUMxMC4xLDEuMjksOS43MSwwLjgzLDkuMjEsMC41MQoJQzguNzIsMC4xOSw4LjE0LDAuMDEsNy41NSwwUzYuMzcsMC4xNSw1Ljg2LDAuNDVDNS4zNiwwLjc2LDQuOTUsMS4yLDQuNjksMS43MmMtMC4yNiwwLjUzLTAuMzcsMS4xMS0wLjMxLDEuNwoJQzQuNDQsNCw0LjY3LDQuNTYsNS4wNCw1LjAyYy0wLjMyLTAuMzYtMC43Mi0wLjYzLTEuMTctMC44QzMuNDIsNC4wNSwyLjk0LDQsMi40Niw0LjA3QzEuOTgsNC4xNCwxLjUzLDQuMzIsMS4xNSw0LjYxCglTMC40Niw1LjI3LDAuMjYsNS43Yy0wLjIsMC40My0wLjI5LDAuOTEtMC4yNSwxLjM4QzAuMDQsNy41NiwwLjIsOC4wMiwwLjQ2LDguNDJjMC4yNiwwLjQsMC42MiwwLjczLDEuMDQsMC45NgoJYzAuNDIsMC4yMywwLjksMC4zNSwxLjM4LDAuMzVjMC4xNywwLDAuMzUtMC4wMiwwLjUyLTAuMDVjLTAuNDYsMC4yMS0wLjg1LDAuNTQtMS4xMywwLjk1Yy0wLjI5LDAuNDEtMC40NiwwLjg5LTAuNSwxLjM5CgljLTAuMDQsMC41LDAuMDUsMSwwLjI3LDEuNDVDMi4yNSwxMy45LDIuNTksMTQuMjksMywxNC41N2MwLjQyLDAuMjgsMC45LDAuNDUsMS40LDAuNDljMC41LDAuMDQsMS4wMS0wLjA2LDEuNDYtMC4yNwoJczAuODQtMC41NSwxLjEzLTAuOTZjMC4yOC0wLjQxLDAuNDUtMC44OSwwLjQ5LTEuMzloMC4wNGMwLjA0LDAuNSwwLjIsMC45OCwwLjQ5LDEuMzljMC4yOCwwLjQxLDAuNjcsMC43NSwxLjEzLDAuOTYKCWMwLjQ2LDAuMjIsMC45NiwwLjMxLDEuNDcsMC4yN3MwLjk5LTAuMjEsMS40MS0wLjQ5YzAuNDItMC4yOCwwLjc1LTAuNjcsMC45Ny0xLjEyQzEzLjIsMTMsMTMuMjksMTIuNSwxMy4yNSwxMgoJYy0wLjA0LTAuNS0wLjIxLTAuOTgtMC41LTEuMzljLTAuMjktMC40MS0wLjY4LTAuNzQtMS4xNC0wLjk1YzAuMTcsMC4wMywwLjM1LDAuMDUsMC41MiwwLjA1YzAuNzYtMC4wMSwxLjQ4LTAuMzEsMi4wMi0wLjg0CglDMTQuNjgsOC4zNCwxNC45OCw3LjYyLDE0Ljk4LDYuODd6Ii8+Cjwvc3ZnPgo=);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: center;
+}
+
+.event-preview__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-preview__content {
+  padding: 2.5rem;
+}
+
+.event-preview__content > *:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 60rem) {
+  .event-preview__content {
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 76rem) {
+  .event-preview {
+    display: flex;
+  }
+  .event-preview__image {
+    padding-top: 0;
+    width: min(365px, 35%);
+    flex-shrink: 0;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-sojourn-testimonial {
+	// background-color: #21759b;
+	// color: #fff;
+	// padding: 2px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.wp-block-sojourn-testimonial .testimonial-flower {
+  width: 26px;
+  margin: 0 auto 3rem;
+}
+
+.wp-block-sojourn-testimonial blockquote {
+  text-align: center;
+}
+
+.wp-block-sojourn-testimonial blockquote p {
+  // font-size: 1.125rem;
+  font-family: var(--playfair);
+}
+
+.wp-block-sojourn-testimonial cite p {
+  font-weight: 600;
+  text-align: center;
+}
+
+@media only screen and (min-width: 48rem) {
+
+  .wp-block-sojourn-testimonial blockquote p {
+    font-size: 1.5rem;
+  }
+
+  .wp-block-sojourn-testimonial cite p {
+    font-size: 1.5rem;
+  }
+
+}

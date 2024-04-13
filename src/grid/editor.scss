@@ -1,0 +1,68 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-brushwood-grid {
+	// border: 1px dotted #f00;
+}
+
+.simple-grid {
+	display: block;
+}
+
+.simple-grid > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: grid;
+	gap: 1.5rem;
+}
+
+// Spacing
+
+.simple-grid.simple-grid--spacing-0 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	gap: 0;
+}
+
+.simple-grid.simple-grid--spacing-1 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	gap: var(--wp--preset--spacing--20);
+}
+
+.simple-grid.simple-grid--spacing-2 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	gap: var(--wp--preset--spacing--30);
+}
+
+.simple-grid.simple-grid--spacing-3 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	gap: var(--wp--preset--spacing--40);
+}
+
+.simple-grid.simple-grid--spacing-4 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	gap: var(--wp--preset--spacing--50);
+}
+
+.simple-grid.simple-grid--spacing-5 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	gap: var(--wp--preset--spacing--60);
+}
+
+.simple-grid.simple-grid--spacing-6 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	gap: var(--wp--preset--spacing--70);
+}
+
+.simple-grid--2 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.simple-grid--3 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.simple-grid--4 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.simple-grid--5 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.simple-grid--6 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-template-columns: repeat(6, 1fr);
+}
