@@ -5,28 +5,36 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-brushwood-tabs .tab-labels {
-	display: flex;
-	flex-direction: column;
-  height: 3.5rem;
-  overflow: hidden;
-	border: 1px solid black;
-	background-color: white;
+.wp-block-ridges-full-bleed-photo-banner + .wp-block-ridges-tabs {
+	position: relative;
+	margin-top: -1.8rem;
 }
 
-.wp-block-brushwood-tabs.open .tab-labels {
+.wp-block-ridges-tabs .tab-labels {
+	display: flex;
+	flex-direction: column;
+  // height: 3.5rem;
+  height: calc(3.5rem - 1px);
+  overflow: hidden;
+	border: 1px solid var(--forest-green);
+	background-color: var(--taupe);
+	padding-left: 0;
+}
+
+.wp-block-ridges-tabs.open .tab-labels {
 	height: auto;
 	border-bottom: 0;
 }
 
-.wp-block-brushwood-tabs .tab-labels .tab-label {
+.wp-block-ridges-tabs .tab-labels .tab-label {
 	display: inline-block;
 	list-style: none;
 	padding: 1em 2em;
 	cursor: pointer;
 	font-weight: 600;
-	text-transform: uppercase;
-	color: black;
+	// text-transform: uppercase;
+	// color: black;
+	color: var(--forest-green);
 	font-size: 0.9375rem;
 	letter-spacing: 0.1em;
 	border-bottom: 1px solid black;
@@ -43,11 +51,12 @@
 	}
 	&:focus,
 	&:hover {
-		background-color: hsl(0deg 0% 95%);
+		// background-color: hsl(0deg 0% 95%);
+		background-color: hsl(35deg 28% 82%);
 	}
 }
 
-.wp-block-brushwood-tabs.open .tab-labels .tab-label {
+.wp-block-ridges-tabs.open .tab-labels .tab-label {
 
 	&.active {
     background-image: url("assets/caret--up-green.svg");
@@ -55,11 +64,11 @@
 
 }
 
-.wp-block-brushwood-tabs .tab-content {
+.wp-block-ridges-tabs .tab-content {
 	padding-top: 1.5rem;
 }
 
-.wp-block-brushwood-tabs .tab-content .tab-panel {
+.wp-block-ridges-tabs .tab-content .tab-panel {
 	display: none;
 	&.active {
 		display: block;
@@ -68,33 +77,37 @@
 
 @media only screen and (min-width: 76.25rem) {
 
-	.wp-block-brushwood-tabs .tab-labels {
+	.wp-block-ridges-tabs .tab-labels {
 		flex-direction: row;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.wp-block-brushwood-tabs.open .tab-labels {
-		border-bottom: 1px solid black;
+	.wp-block-ridges-tabs.open .tab-labels {
+		border-bottom: 1px solid var(--forest-green);
 	}
 
-	.wp-block-brushwood-tabs .tab-labels .tab-label {
+	.wp-block-ridges-tabs .tab-labels .tab-label {
 		flex: 1 1 0;
 		padding: 1em 3em;
 		border-bottom: none;
+		border-right: 1px solid var(--forest-green);
 		text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 		&.active {
-			background-color: black;
-			color: white;
+			background-color: var(--forest-green);
+			color: var(--taupe);
 			background-image: none;
 			order: unset;
 		}
+		&:last-child {
+			border-right: none;
+		}
 	}
 
-	.wp-block-brushwood-tabs.open .tab-labels .tab-label {
+	.wp-block-ridges-tabs.open .tab-labels .tab-label {
 
 		&.active {
 	    background-image: none;

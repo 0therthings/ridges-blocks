@@ -1,7 +1,7 @@
 {
-	"name": "upic-blocks",
+	"name": "ridges-blocks",
 	"version": "0.1.0",
-	"description": "A collection of custom Gutenberg/WordPress blocks for the UPIC Health website.",
+	"description": "A collection of custom Gutenberg/WordPress blocks for the Riges sanctuary website.",
 	"author": "Other Things",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

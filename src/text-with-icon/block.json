@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ridges/text-with-icon",
+	"version": "0.1.0",
+	"title": "Text With Icon",
+	"category": "ridges",
+	"icon": "editor-textcolor",
+	"description": "The text with icon block provides a simple way to add paragraph text with an image in front of it. You can provide a size to match the text.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "text-with-icon",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"vertical_alignment": {
+			"type": "string",
+			"default": "top"
+		},
+		"icon_size": {
+			"type": "number",
+			"default": 20
+		},
+		"iconID": {
+			"type": "number",
+			"default": null
+		},
+		"iconURL": {
+			"type": "string",
+			"default": "https://source.unsplash.com/random?sig=event-preview"
+		}
+	}
+}

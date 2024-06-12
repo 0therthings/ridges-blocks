@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const ALLOWED_BLOCKS = ['brushwood/tab'];
+const ALLOWED_BLOCKS = ['ridges/tab'];
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -204,7 +204,7 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('brushwood/tabs', {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('ridges/tabs', {
   /**
    * @see ./edit.js
    */
@@ -326,13 +326,13 @@ const {
 /**********************************************************
  * Registering Child Innerblock for the Tabbed Content block
  **********************************************************/
-registerBlockType('brushwood/tab', {
+registerBlockType('ridges/tab', {
   // Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
   title: __('Tab'),
   // Block title.
   icon: 'welcome-add-page',
   // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-  parent: ['brushwood/tabs'],
+  parent: ['ridges/tabs'],
   category: 'design',
   // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
   attributes: {
@@ -364,7 +364,7 @@ registerBlockType('brushwood/tab', {
       setAttributes,
       isSelected
     } = props;
-    const parentBlockID = wp.data.select('core/block-editor').getBlockParentsByBlockName(props.clientId, ['brushwood/tabs']);
+    const parentBlockID = wp.data.select('core/block-editor').getBlockParentsByBlockName(props.clientId, ['ridges/tabs']);
     var savedBlockIndex = blockIndex;
     const getBlockIndex = wp.data.select('core/block-editor').getBlockOrder(parentBlockID).indexOf(props.clientId);
     const unsubscribe = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.subscribe)(() => {
@@ -679,7 +679,7 @@ module.exports = window["wp"]["i18n"];
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkupic_blocks"] = globalThis["webpackChunkupic_blocks"] || [];
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkridges_blocks"] = globalThis["webpackChunkridges_blocks"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

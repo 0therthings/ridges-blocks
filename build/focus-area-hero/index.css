@@ -1,0 +1,53 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/focus-area-hero/editor.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.editor-styles-wrapper .wp-block-ridges-focus-area-hero {
+  margin-bottom: 1.5rem;
+}
+.editor-styles-wrapper .focus-area-hero__title-container {
+  padding: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.editor-styles-wrapper .focus-area-hero__title-container h1 {
+  color: var(--taupe);
+  font-weight: 300;
+  font-variation-settings: "wght" 300;
+}
+.editor-styles-wrapper .focus-area-hero__icon-placeholder, .editor-styles-wrapper .focus-area-hero__icon {
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25rem;
+}
+
+@media only screen and (min-width: 40rem) {
+  .editor-styles-wrapper .wp-block-ridges-focus-area-hero {
+    margin-bottom: 5.625rem;
+  }
+  .editor-styles-wrapper .focus-area-hero__title-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    padding: 2rem 2.5rem;
+  }
+  .editor-styles-wrapper .focus-area-hero__title-container h1 {
+    margin-bottom: 0;
+  }
+  .editor-styles-wrapper .focus-area-hero__icon-placeholder, .editor-styles-wrapper .focus-area-hero__icon {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+    max-width: 11.25rem;
+  }
+  .editor-styles-wrapper .focus-area-hero__icon-placeholder img, .editor-styles-wrapper .focus-area-hero__icon img {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map*/

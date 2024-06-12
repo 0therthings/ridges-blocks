@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+// .wp-block-ridges-text-with-icon {
+// 	border: 1px dotted #f00;
+// }
+
+.text-with-icon__icon img {
+	width: 100%;
+}
+
+.editor-styles-wrapper {
+
+	.text-with-icon__icon-placeholder, .text-with-icon__icon {
+		margin-right: 1rem;
+	}
+
+	.text-with-icon__icon-placeholder img, .text-with-icon__icon img {
+		margin-bottom: 0;
+	}
+
+	.block-editor-inner-blocks .block-editor-block-list__layout > *:last-child {
+		margin-bottom: 0;
+	}
+
+}

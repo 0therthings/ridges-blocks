@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ridges/focus-area-hero",
+	"version": "0.1.0",
+	"title": "Focus Area Hero",
+	"category": "ridges",
+	"icon": "superhero-alt",
+	"description": "The focus area hero block is a simple header block that allows you to display both a colorful background pattern and an icon with the page title. This block should generally be reserved for focus area landing pages.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "focus-area-hero",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"pageTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": ".focus-area-hero__title-container h1",
+			"placeholder": "Page Title"
+		},
+		"backgroundID": {
+			"type": "number",
+			"default": null
+		},
+		"backgroundURL": {
+			"type": "string",
+			"default": "https://source.unsplash.com/random?sig=event-preview"
+		},
+		"iconID": {
+			"type": "number",
+			"default": null
+		},
+		"iconURL": {
+			"type": "string",
+			"default": "https://source.unsplash.com/random?sig=event-preview"
+		}
+	}
+}

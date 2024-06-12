@@ -1,0 +1,123 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ridges-full-bleed-photo-banner {
+	position: relative;
+}
+
+.editor-styles-wrapper .photo-banner__bg-container {
+	position: relative;
+	overflow: hidden;
+	padding-top: 40%;
+}
+
+.editor-styles-wrapper .photo-banner__bg-container img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
+
+.editor-styles-wrapper .photo-banner__content {
+	background-color: var(--forest-green);
+	padding: 3rem 0;
+}
+
+.photo-banner__content-container {
+	
+}
+
+.photo-banner__content-container .wp-block-buttons:last-child {
+	margin-top: 3rem;
+	margin-bottom: -3rem;
+	margin-left: -20px;
+	margin-right: -20px;
+	gap: 0;
+}
+
+.photo-banner__content-container .block-editor-block-list__layout > .wp-block-buttons:last-child .wp-block-button {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.photo-banner__content-container .block-editor-block-list__layout > .wp-block-buttons:last-child .wp-block-button__link {
+	width: 100%;
+}
+
+.photo-banner__content-container .block-editor-block-list__layout > .wp-block-button:last-child {
+	margin-top: 3rem;
+	margin-bottom: -3rem;
+	margin-left: -20px;
+	margin-right: -20px;
+	display: block;
+  text-align: center;
+}
+
+.photo-banner__content-container .block-editor-block-list__layout > .wp-block-button:last-child .wp-block-button__link {
+	border-radius: 0;
+	width: 100%;
+}
+
+@media only screen and (min-width: 35rem) {
+
+	.editor-styles-wrapper .photo-banner__content-container {
+		padding: 0 45px;
+	}
+
+	.photo-banner__content-container .block-editor-block-list__layout > .wp-block-buttons:last-child {
+		margin-left: -45px;
+		margin-right: -45px;
+	}
+
+	.photo-banner__content-container .block-editor-block-list__layout > .wp-block-button:last-child {
+		margin-left: -45px;
+		margin-right: -45px;
+	}
+
+}
+
+@media only screen and (min-width: 60rem) {
+
+	.editor-styles-wrapper .photo-banner__bg-container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+
+	.photo-banner__inner-wrapper {
+		max-width: 1475px;
+		width: calc(100% - 90px);
+		margin: 0 auto;
+	}
+
+	.editor-styles-wrapper .photo-banner__content {
+		z-index: 1;
+		width: 40%;
+		max-width: 500px;
+		margin-top: 6rem;
+		margin-bottom: 6rem;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+	.photo-banner--right .photo-banner__content {
+		margin-left: auto;
+	}
+
+	.photo-banner--center .photo-banner__content {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}

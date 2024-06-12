@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ridges/grid-weighted",
+  "version": "0.1.0",
+  "title": "Weighted Grid",
+  "category": "ridges",
+  "icon": "screenoptions",
+  "description": "The weighted grid block provides a two-column container grid where the first item will take up the full space of one of the columns.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "grid",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "columns": {
+      "type": "integer",
+      "default": 1
+    },
+    "mobileColumns": {
+      "type": "integer",
+      "default": 1
+    },
+    "spacing": {
+      "type": "integer",
+      "default": 1
+    },
+    "alignment": {
+      "type": "string",
+      "default": "left"
+    }
+  }
+}

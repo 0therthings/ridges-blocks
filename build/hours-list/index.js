@@ -221,7 +221,7 @@ module.exports = window["wp"]["i18n"];
   \***********************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"sojourn/hours-list","version":"0.1.0","title":"Hours List","category":"sojourn","icon":"clock","description":"This block lists daily restaurant hours set in the WordPress customizer","supports":{"html":false},"textdomain":"hours-list","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"ridges/hours-list","version":"0.1.0","title":"Hours List","category":"ridges","icon":"clock","description":"This block lists daily nature center hours set in the WordPress customizer","supports":{"html":false},"textdomain":"hours-list","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
@@ -376,7 +376,7 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkupic_blocks"] = globalThis["webpackChunkupic_blocks"] || [];
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkridges_blocks"] = globalThis["webpackChunkridges_blocks"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

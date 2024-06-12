@@ -278,7 +278,7 @@ module.exports = window["wp"]["i18n"];
   \*****************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"brushwood/grid","version":"0.1.0","title":"Simple Grid","category":"brushwood","icon":"screenoptions","description":"The simple grid block allows you to space grid children evenly.","example":{},"supports":{"html":false},"textdomain":"grid","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"columns":{"type":"integer","default":1},"mobileColumns":{"type":"integer","default":1},"spacing":{"type":"integer","default":1}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ridges/grid","version":"0.1.0","title":"Simple Grid","category":"ridges","icon":"screenoptions","description":"The simple grid block allows you to space grid children evenly.","example":{},"supports":{"html":false},"textdomain":"grid","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"columns":{"type":"integer","default":1},"mobileColumns":{"type":"integer","default":1},"spacing":{"type":"integer","default":1}}}');
 
 /***/ })
 
@@ -433,7 +433,7 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkupic_blocks"] = globalThis["webpackChunkupic_blocks"] || [];
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkridges_blocks"] = globalThis["webpackChunkridges_blocks"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

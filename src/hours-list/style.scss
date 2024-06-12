@@ -5,14 +5,11 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-sojourn-hours-list {
-	// background-color: #21759b;
-	// color: #fff;
-	// padding: 2px;
+.wp-block-ridges-hours-list {
   margin-bottom: 3rem;
 }
 
-.wp-block-sojourn-hours-list dl {
+.wp-block-ridges-hours-list dl {
   // background-color: hsl(39deg 33% 75%);
   display: grid;
   // grid-template-columns: auto auto;
@@ -24,17 +21,17 @@
   // padding: 0.65rem 20px;
 }
 
-.wp-block-sojourn-hours-list dt, .wp-block-sojourn-hours-list dd {
+.wp-block-ridges-hours-list dt, .wp-block-ridges-hours-list dd {
   font-size: 1.125rem;
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--sand-dark);
 }
 
-.wp-block-sojourn-hours-list dt {
+.wp-block-ridges-hours-list dt {
   padding-right: 1rem;
 }
 
-.wp-block-sojourn-hours-list dt:nth-last-child(2), .wp-block-sojourn-hours-list dd:last-child {
+.wp-block-ridges-hours-list dt:nth-last-child(2), .wp-block-ridges-hours-list dd:last-child {
   border-bottom: none;
 }
 
@@ -56,24 +53,32 @@
 //   margin-left: 20px;
 // }
 
-.sunday .wp-block-sojourn-hours-list .sunday {
+.sunday .wp-block-ridges-hours-list .sunday {
   font-weight: bold;
 }
-.monday .wp-block-sojourn-hours-list .monday {
+.monday .wp-block-ridges-hours-list .monday {
   font-weight: bold;
 }
-.tuesday .wp-block-sojourn-hours-list .tuesday {
+.tuesday .wp-block-ridges-hours-list .tuesday {
   font-weight: bold;
 }
-.wednesday .wp-block-sojourn-hours-list .wednesday {
+.wednesday .wp-block-ridges-hours-list .wednesday {
   font-weight: bold;
 }
-.thursday .wp-block-sojourn-hours-list .thursday {
+.thursday .wp-block-ridges-hours-list .thursday {
   font-weight: bold;
 }
-.friday .wp-block-sojourn-hours-list .friday {
+.friday .wp-block-ridges-hours-list .friday {
   font-weight: bold;
 }
-.saturday .wp-block-sojourn-hours-list .saturday {
+.saturday .wp-block-ridges-hours-list .saturday {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .wp-block-ridges-hours-list {
+    max-width: 18rem;
+  }
+
 }

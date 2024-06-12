@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ridges/heading-with-button",
+  "version": "0.1.0",
+  "title": "Heading With Button",
+  "category": "ridges",
+  "icon": "heading",
+  "description": "The heading with button block is a simple, prepackages block allowing you to place text and buttons in one line.",
+  "example": {},
+  "supports": {
+    "anchor": true
+  },
+  "textdomain": "heading-with-button",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "backgroundColor": {
+      "type": "string"
+    }
+  }
+}

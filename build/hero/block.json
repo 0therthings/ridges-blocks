@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ridges/hero",
+  "version": "0.1.0",
+  "title": "Hero",
+  "category": "ridges",
+  "icon": "superhero-alt",
+  "description": "The hero block is used for most page headers, allowing for a title and list of buttons, with a path motif in the background.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "hero",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "pattern": {
+      "type": "number",
+      "default": 1
+    }
+  }
+}

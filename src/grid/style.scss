@@ -71,3 +71,14 @@
 	}
 
 }
+
+/* Inner Blocks */
+
+.simple-grid > .wp-block-image {
+	margin-bottom: 0;
+}
+
+.simple-grid > .wp-block-image > img {
+	min-height: 100%;
+	object-fit: cover;
+}

@@ -1,0 +1,9 @@
+<svg class="home-hero-path-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1136.8 870.9">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0" y1="435.45" x2="1136.8" y2="435.45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e48b3a"/>
+      <stop offset=".57" stop-color="#efc65f"/>
+    </linearGradient>
+  </defs>
+  <path d="M15.2,640.03c130.18,173.57,347.14,297.24,386.2,138.86,39.05-158.38,184.94-362.84,418.74-375.35,182.22-16.29,312.86-272.82,296.23-401.09" fill="none" stroke="url(#linear-gradient)" stroke-miterlimit="10" stroke-width="38"/>
+</svg>

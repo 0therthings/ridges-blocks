@@ -1,0 +1,108 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/hike-preview/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-ridges-hike-preview {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(176, 50%, 17%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.hike-preview__img-wrapper {
+  position: relative;
+  padding-top: 57.5%;
+  overflow: hidden;
+}
+
+.hike-preview__img-wrapper img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hike-preview__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.5rem 2rem;
+  color: var(--taupe);
+}
+.hike-preview__content-wrapper h1, .hike-preview__content-wrapper h2, .hike-preview__content-wrapper h3, .hike-preview__content-wrapper h4, .hike-preview__content-wrapper h5, .hike-preview__content-wrapper h6, .hike-preview__content-wrapper p {
+  color: var(--taupe);
+}
+
+.hike-preview__content-wrapper > .wp-block-buttons:last-child .wp-block-button__link {
+  width: 100%;
+}
+
+.hike-preview__content-wrapper > .wp-block-ridges-text-with-icon {
+  margin-top: auto;
+}
+
+.hike-preview__content-wrapper > .wp-block-buttons {
+  margin-top: auto;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.hike-preview__content-wrapper > .wp-block-ridges-text-with-icon + .wp-block-buttons {
+  margin-top: unset;
+}
+
+.hike-preview__content-wrapper > .wp-block-buttons > .wp-block-button {
+  flex-grow: 1;
+}
+
+.hike-preview__location-wrapper {
+  display: none;
+  background-color: var(--forest-green-dark);
+  color: var(--taupe);
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.has-meeting-info .hike-preview__location-wrapper {
+  display: block;
+}
+
+.hike-preview__location-wrapper h4, .hike-preview__location-wrapper p {
+  color: var(--taupe);
+}
+
+.hike-preview__location-wrapper h4 {
+  font-family: var(--proxima);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+}
+
+.hike-preview__location-wrapper p {
+  margin-bottom: 0.44444em;
+}
+
+@media only screen and (min-width: 35rem) {
+  .hike-preview__location-wrapper {
+    min-height: 8.125rem;
+  }
+  .hike-preview__content-wrapper > .wp-block-ridges-text-with-icon {
+    min-height: 2.75rem;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

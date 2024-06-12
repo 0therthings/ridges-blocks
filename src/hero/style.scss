@@ -1,0 +1,68 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ridges-hero:first-child {
+	margin-top: -1.5em;
+}
+
+.wp-block-ridges-hero {
+	position: relative;
+	background-size: 100%;
+	// background-color: red;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 1.5rem 0;
+	margin-bottom: 3rem;
+}
+
+.hero__path-generator {
+	position: absolute;
+	top: 0.5rem;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: -1;
+	overflow: visible;
+}
+
+.hero__path-generator g {
+	display: none;
+}
+
+.hero__path-generator path {
+	stroke-width: 37px;
+}
+
+.wp-block-ridges-hero.hero--trail-1 g.path-1, .wp-block-ridges-hero.hero--trail-2 g.path-2, .wp-block-ridges-hero.hero--trail-3 g.path-3, .wp-block-ridges-hero.hero--trail-4 g.path-4, .wp-block-ridges-hero.hero--trail-5 g.path-5, .wp-block-ridges-hero.hero--trail-6 g.path-6 , .wp-block-ridges-hero.hero--trail-7 g.path-7, .wp-block-ridges-hero.hero--trail-8 g.path-8, .wp-block-ridges-hero.hero--trail-9 g.path-9, .wp-block-ridges-hero.hero--trail-10 g.path-10  {
+	display: block;
+}
+
+.wp-block-ridges-hero.hero--trail-1.hero--trail-2, .wp-block-ridges-hero.hero--trail-1.hero--trail-3, .wp-block-ridges-hero.hero--trail-1.hero--trail-4, .wp-block-ridges-hero.hero--trail-1.hero--trail-5, .wp-block-ridges-hero.hero--trail-1.hero--trail-6, .wp-block-ridges-hero.hero--trail-1.hero--trail-7, .wp-block-ridges-hero.hero--trail-1.hero--trail-8, .wp-block-ridges-hero.hero--trail-1.hero--trail-9, .wp-block-ridges-hero.hero--trail-1.hero--trail-10 {
+
+	g.path-1 {
+		display: none;
+	}
+
+}
+
+.hero__content-container {
+	position: relative;
+	z-index: 1;
+}
+
+@media only screen and (min-width: 60rem) {
+
+	.wp-block-ridges-hero:first-child {
+		margin-top: -6em;
+	}
+
+	.wp-block-ridges-hero {
+		padding: 4.5rem 0;
+	}
+
+}
+

@@ -1,0 +1,123 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ridges-accordion {
+	overflow: auto;
+	// How too handle secondaries sticking together?
+	margin-bottom: 1.5rem;
+}
+
+.wp-block-ridges-accordion.accordion--primary {
+	background-color: hsl(35deg 28% 82%);
+}
+
+.wp-block-ridges-accordion.accordion--secondary {
+	border-top: 1px solid hsl(46deg 16% 68%);
+	border-bottom: 1px solid hsl(46deg 16% 68%);
+}
+
+.wp-block-ridges-accordion summary::-webkit-details-marker, .wp-block-ridges-accordion summary::marker {
+  display: none !important;
+}
+
+.wp-block-ridges-accordion summary {
+	position: relative;
+	list-style: none;
+	// padding: 2rem 0;
+		padding: 2rem;
+	// background-image: url(./assets/caret--down-forest.svg);
+	// background-repeat: no-repeat;
+	// background-size: 13px;
+}
+
+// .wp-block-ridges-accordion.accordion--secondary summary {
+// 	padding: 1.5rem 0;
+// }
+
+.wp-block-ridges-accordion.accordion--secondary summary {
+	padding: 1.5rem 2rem;
+}
+
+.wp-block-ridges-accordion summary:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 2rem;
+	transform: translateY(-50%);
+	width: 13px;
+	height: 6px;
+	background-image: url(./assets/caret--down-forest.svg);
+	background-repeat: no-repeat;
+	background-size: 13px;
+}
+
+.wp-block-ridges-accordion[open] summary:after {
+	transform: translateY(-50%) scaleY(-1);
+}
+
+.wp-block-ridges-accordion.accordion--primary summary {
+	padding: 2rem;
+}
+
+// .wp-block-ridges-accordion summary {
+// 	padding: 2rem;
+// }
+
+.wp-block-ridges-accordion summary h2, .wp-block-ridges-accordion summary h3 {
+	font-size: 1rem;
+	font-family: var(--proxima);
+	margin-bottom: 0;
+}
+
+.wp-block-ridges-accordion summary p, .wp-block-ridges-accordion summary span {
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+.wp-block-ridges-accordion.accordion--primary summary + div {
+	// padding: 0 2rem;
+	padding: 0 2rem 3rem;
+}
+
+.wp-block-ridges-accordion.accordion--secondary + .accordion--secondary {
+	margin-top: -1.5rem;
+	border-top: none;
+}
+
+@media only screen and (min-width: 56rem) {
+
+	.wp-block-ridges-accordion summary {
+		display: flex;
+		align-items: center;
+	}
+
+	.wp-block-ridges-accordion summary h2, .wp-block-ridges-accordion summary h3 {
+		margin-right: 1.5rem;
+		// width: 60%;
+		// width: 52rem;
+		// ^ you should give the supplementary some kind of width instead so that the heading can grow
+	}
+
+	// .wp-block-ridges-accordion.accordion--primary summary h3 {
+	// 	width: 50rem;
+	// }
+
+	.wp-block-ridges-accordion summary p, .wp-block-ridges-accordion summary span {
+		// flex-shrink: 1;
+		width: 480px;
+		margin-left: auto;
+	}
+
+	// .wp-block-ridges-accordion.accordion--primary summary p, .wp-block-ridges-accordion.accordion--primary summary span {
+	// 	width: calc(480px - 2rem);
+	// }
+
+	.wp-block-ridges-accordion summary p, .wp-block-ridges-accordion summary span {
+		width: calc(480px - 2rem);
+	}
+
+}

@@ -1,0 +1,13 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@media only screen and (min-width: 782px) {
+
+	.weighted-grid {
+		grid-template-columns: 1fr;
+	}
+
+}

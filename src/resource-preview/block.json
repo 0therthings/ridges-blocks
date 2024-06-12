@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ridges/resource-preview",
+	"version": "0.1.0",
+	"title": "Resource Preview",
+	"category": "ridges",
+	"icon": "book",
+	"description": "The resource preview block is a short synopsis to promote other pages and encourage users to learn more. The block provides an icon, title, and button within a green container.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "resource-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

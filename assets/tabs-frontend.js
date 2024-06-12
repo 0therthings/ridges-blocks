@@ -1,5 +1,5 @@
 window.onload = function() {
-    var tabBlocks = document.querySelectorAll( '.wp-block-brushwood-tabs' );
+    var tabBlocks = document.querySelectorAll( '.wp-block-ridges-tabs' );
 
     tabBlocks.forEach( function( tabBlock, i ){
         

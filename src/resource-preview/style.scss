@@ -1,0 +1,39 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ridges-resource-preview {
+	display: flex;
+	flex-direction: column;
+	
+	background-color: hsl(176deg, 50%, 17%);
+	color: hsl(38deg, 14%, 85%);
+	// padding: 1.3125rem 0.875rem;
+	padding: 2rem;
+	border-radius: 15px;
+	min-height: 20rem;
+}
+
+.wp-block-ridges-resource-preview .wp-block-buttons {
+	margin-left: -10px;
+	margin-right: -10px;
+	// Make last or second to last child?
+	margin-top: auto;
+}
+
+// .wp-block-ridges-resource-preview .wp-block-buttons {
+// 	margin-left: -10px;
+// 	margin-right: -10px;
+// }
+
+.wp-block-ridges-resource-preview .wp-block-button {
+	flex-grow: 1;
+}
+
+.wp-block-ridges-resource-preview .wp-block-button__link {
+	width: 100%;
+	background-color: hsl(176deg 22% 27%);
+}

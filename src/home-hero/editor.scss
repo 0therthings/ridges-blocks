@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ridges-home-hero {
+	
+}
+
+.editor-styles-wrapper {
+	
+	.home-hero__path-1, .home-hero__path-1-loop, .home-hero__path-2 {
+		display: none !important;
+	}
+
+}

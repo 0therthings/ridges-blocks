@@ -1,0 +1,96 @@
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/accordion/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-ridges-accordion {
+  overflow: auto;
+  margin-bottom: 1.5rem;
+}
+
+.wp-block-ridges-accordion.accordion--primary {
+  background-color: hsl(35, 28%, 82%);
+}
+
+.wp-block-ridges-accordion.accordion--secondary {
+  border-top: 1px solid hsl(46, 16%, 68%);
+  border-bottom: 1px solid hsl(46, 16%, 68%);
+}
+
+.wp-block-ridges-accordion summary::-webkit-details-marker, .wp-block-ridges-accordion summary::marker {
+  display: none !important;
+}
+
+.wp-block-ridges-accordion summary {
+  position: relative;
+  list-style: none;
+  padding: 2rem;
+}
+
+.wp-block-ridges-accordion.accordion--secondary summary {
+  padding: 1.5rem 2rem;
+}
+
+.wp-block-ridges-accordion summary:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 6px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDEzLjUgNi42NCI+CiAgPHBhdGggZD0iTTEyLjc1Ljc1bC02LDUuMTRMLjc1Ljc1IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDQ3MmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPC9zdmc+);
+  background-repeat: no-repeat;
+  background-size: 13px;
+}
+
+.wp-block-ridges-accordion[open] summary:after {
+  transform: translateY(-50%) scaleY(-1);
+}
+
+.wp-block-ridges-accordion.accordion--primary summary {
+  padding: 2rem;
+}
+
+.wp-block-ridges-accordion summary h2, .wp-block-ridges-accordion summary h3 {
+  font-size: 1rem;
+  font-family: var(--proxima);
+  margin-bottom: 0;
+}
+
+.wp-block-ridges-accordion summary p, .wp-block-ridges-accordion summary span {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.wp-block-ridges-accordion.accordion--primary summary + div {
+  padding: 0 2rem 3rem;
+}
+
+.wp-block-ridges-accordion.accordion--secondary + .accordion--secondary {
+  margin-top: -1.5rem;
+  border-top: none;
+}
+
+@media only screen and (min-width: 56rem) {
+  .wp-block-ridges-accordion summary {
+    display: flex;
+    align-items: center;
+  }
+  .wp-block-ridges-accordion summary h2, .wp-block-ridges-accordion summary h3 {
+    margin-right: 1.5rem;
+  }
+  .wp-block-ridges-accordion summary p, .wp-block-ridges-accordion summary span {
+    width: 480px;
+    margin-left: auto;
+  }
+  .wp-block-ridges-accordion summary p, .wp-block-ridges-accordion summary span {
+    width: calc(480px - 2rem);
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

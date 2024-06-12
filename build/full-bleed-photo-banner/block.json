@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ridges/full-bleed-photo-banner",
+  "version": "0.1.0",
+  "title": "Full Bleed Photo Banner",
+  "category": "ridges",
+  "icon": "embed-photo",
+  "description": "The Full Bleed Photo Banner block allows you to display a container of text content over full-width photography. Alignment options include left and right, depending on the subject matter of the background.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "full-bleed-photo-banner",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "imageID": {
+      "type": "number",
+      "default": 0
+    },
+    "imageURL": {
+      "type": "string"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "blockAlignment": {
+      "type": "string",
+      "default": "left"
+    }
+  }
+}

@@ -9,7 +9,7 @@ import { useSelect } from '@wordpress/data';
 import { ToggleControl } from '@wordpress/components';
 import { useState } from '@wordpress/element';
 
-const ALLOWED_BLOCKS = [ 'brushwood/tab' ];
+const ALLOWED_BLOCKS = [ 'ridges/tab' ];
 
 /**
  * React hook that is used to mark the block wrapper element.

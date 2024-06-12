@@ -1,0 +1,13 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.editor-styles-wrapper .wp-block-ridges-accordion {
+  margin-bottom: 1.5rem;
+}
+
+.accordion summary::-webkit-details-marker, .accordion summary::marker {
+  display:none;
+}

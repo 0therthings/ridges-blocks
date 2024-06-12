@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ridges/hike-preview",
+	"version": "0.1.0",
+	"title": "Hike Preview",
+	"category": "ridges",
+	"icon": "location-alt",
+	"description": "The hike preview block is a short synopsis to promote a hike and give potential attendees all the information they need to join. The block provides an photo, title, description, and button within a green container.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "hike-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"imageID": {
+			"type": "number",
+			"default": null
+		},
+		"imageURL": {
+			"type": "string",
+			"default": "https://source.unsplash.com/random?sig=event-preview"
+		},
+		"meetTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": ".hike-preview__location-wrapper h4",
+			"default": "Meets at"
+		},
+		"meetInfo": {
+			"type": "string",
+			"source": "html",
+			"selector": ".hike-preview__location-wrapper p",
+			"placeholder": "Ridges location..."
+		}
+	}
+}

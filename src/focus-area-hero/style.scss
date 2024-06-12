@@ -1,0 +1,85 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ridges-focus-area-hero {
+	// background-color: #21759b;
+	// color: #fff;
+	// padding: 2px;
+	overflow: auto;
+	margin-bottom: 1.5rem;
+	margin-top: -3em;
+}
+
+.wp-block-ridges-focus-area-hero:first-child {
+	margin-top: -3em;
+}
+
+.focus-area-hero__title-container {
+	// background-color: var(--forest-green);
+	background-color: hsl(159deg 100% 14%);
+	padding: 2rem;
+	border-radius: 15px;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.focus-area-hero__title-container h1 {
+	color: var(--taupe);
+	text-align: center;
+	font-weight:300;
+	font-variation-settings: "wght" 300;
+}
+
+.focus-area-hero__icon-placeholder, .focus-area-hero__icon {
+	margin-bottom: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 25rem;
+}
+
+@media only screen and (min-width: 40rem) {
+
+	.wp-block-ridges-focus-area-hero {
+		margin-bottom: 5.625rem;
+	}
+
+	.focus-area-hero__title-container {
+		display: flex;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+		margin-top: 9rem;
+		margin-bottom: 9rem;
+		padding: 2rem 2.5rem;
+	}
+
+	.focus-area-hero__title-container h1 {
+		margin-bottom: 0;
+		transform: translateY(4px);
+	}
+
+	.focus-area-hero__icon-placeholder, .focus-area-hero__icon {
+		margin-bottom: 0;
+		margin-left: unset;
+		margin-right: 1.5rem;
+		max-width: 11.25rem;
+	}
+
+	.focus-area-hero__icon-placeholder img, .focus-area-hero__icon img {
+		margin-bottom: 0;
+	}
+
+}
+
+@media only screen and (min-width: 60rem) {
+
+	.wp-block-ridges-focus-area-hero:first-child {
+		margin-top: -6em;
+	}
+
+}

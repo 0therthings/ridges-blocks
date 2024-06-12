@@ -1,0 +1,37 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+// .wp-block-ridges-hike-preview {
+// 	border: 1px dotted #f00;
+// }
+
+.editor-styles-wrapper {
+
+	.hike-preview__img-wrapper {
+		padding-top: 57.5%;
+	}
+
+	.hike-preview__content-wrapper {
+		padding: 1.5rem 2rem;
+		color: var(--taupe);
+		h1, h2, h3, h4, h5, h6, p {
+			color: var(--taupe);
+		}
+	}
+
+	.hike-preview__location-wrapper {
+		display: block;
+		background-color: var(--forest-green-dark);
+		color: var(--taupe);
+		padding: 1.5rem;
+		text-align: center;
+	}
+
+	.hike-preview__location-wrapper h4, .hike-preview__location-wrapper p {
+		color: var(--taupe);
+	}
+
+}

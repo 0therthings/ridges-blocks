@@ -22,8 +22,22 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function ridges_ridges_blocks_block_init() {
-  // register_block_type( __DIR__ . '/build/tabs' );
+  register_block_type( __DIR__ . '/build/tabs' );
+	register_block_type( __DIR__ . '/build/home-hero' );
+	register_block_type( __DIR__ . '/build/hero' );
+	register_block_type( __DIR__ . '/build/focus-area-hero' );	
 	register_block_type( __DIR__ . '/build/grid' );
+	register_block_type( __DIR__ . '/build/grid-weighted' );
+	register_block_type( __DIR__ . '/build/full-bleed-photo-banner' );
+	register_block_type( __DIR__ . '/build/accordion' );
+	register_block_type( __DIR__ . '/build/resource-preview' );
+	register_block_type( __DIR__ . '/build/hike-preview' );
+	register_block_type( __DIR__ . '/build/heading-with-button' );
+	register_block_type( __DIR__ . '/build/text-with-icon' );
+  // register_block_type( __DIR__ . '/build/tabs' );
+  register_block_type( __DIR__ . '/build/hours-list', [
+    'render_callback' => 'ridges_hours_render'
+  ]);
 }
 add_action( 'init', 'ridges_ridges_blocks_block_init' );
 
@@ -48,3 +62,24 @@ add_filter( 'block_categories_all' , function( $categories ) {
 	);
 	return $categories;
 } ); 
+
+function ridges_hours_render($attr, $content) {
+    return '<div class="wp-block-ridges-hours-list">
+        <dl class="">
+          <dt class="sunday">Sunday</dt>
+          <dd class="sunday">' . get_theme_mod('sunday_hours') . '</dd>
+          <dt class="monday">Monday</dt>
+          <dd class="monday">' . get_theme_mod('monday_hours') . '</dd>
+          <dt class="tuesday">Tuesday</dt>
+          <dd class="tuesday">' . get_theme_mod('tuesday_hours') . '</dd>
+          <dt class="wednesday">Wednesday</dt>
+          <dd class="wednesday">' . get_theme_mod('wednesday_hours') . '</dd>
+          <dt class="thursday">Thursday</dt>
+          <dd class="thursday">' . get_theme_mod('thursday_hours') . '</dd>
+          <dt class="friday">Friday</dt>
+          <dd class="friday">' . get_theme_mod('friday_hours') . '</dd>
+          <dt class="saturday">Saturday</dt>
+          <dd class="saturday">' . get_theme_mod('saturday_hours') . '</dd>
+        </dl>
+      </div>';
+}  

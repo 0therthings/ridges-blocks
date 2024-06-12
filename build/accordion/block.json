@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ridges/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "ridges",
+  "icon": "plus",
+  "description": "Accordions are pieces of content that users can open & close to skim topics and drill down to the information that's relevant to them. Users will see a line of text, and clicking on that text will display its body content. You can use different blocks (paragraphs, images, etc.) to create relevant body content.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "accordion",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Accordion title"
+    },
+    "supplement": {
+      "type": "string",
+      "placeholder": "Supplementary Info (Optional)"
+    },
+    "style": {
+      "type": "string",
+      "default": "primary"
+    }
+  }
+}

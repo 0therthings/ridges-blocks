@@ -20,11 +20,11 @@ import { subscribe } from '@wordpress/data';
 /**********************************************************
  * Registering Child Innerblock for the Tabbed Content block
  **********************************************************/
-registerBlockType( 'brushwood/tab', {
+registerBlockType( 'ridges/tab', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'Tab' ), // Block title.
 	icon: 'welcome-add-page', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	parent: [ 'brushwood/tabs' ],
+	parent: [ 'ridges/tabs' ],
 	category: 'design', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	attributes: {
         tabLabel:{
@@ -55,7 +55,7 @@ registerBlockType( 'brushwood/tab', {
 			setAttributes, isSelected  
 		} = props;
 
-		const parentBlockID = wp.data.select( 'core/block-editor' ).getBlockParentsByBlockName(props.clientId, ['brushwood/tabs']);
+		const parentBlockID = wp.data.select( 'core/block-editor' ).getBlockParentsByBlockName(props.clientId, ['ridges/tabs']);
 		var	savedBlockIndex = blockIndex;
 		const getBlockIndex = wp.data.select( 'core/block-editor' ).getBlockOrder( parentBlockID ).indexOf( props.clientId );
 	

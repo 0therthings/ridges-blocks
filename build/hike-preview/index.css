@@ -1,0 +1,30 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/hike-preview/editor.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.editor-styles-wrapper .hike-preview__img-wrapper {
+  padding-top: 57.5%;
+}
+.editor-styles-wrapper .hike-preview__content-wrapper {
+  padding: 1.5rem 2rem;
+  color: var(--taupe);
+}
+.editor-styles-wrapper .hike-preview__content-wrapper h1, .editor-styles-wrapper .hike-preview__content-wrapper h2, .editor-styles-wrapper .hike-preview__content-wrapper h3, .editor-styles-wrapper .hike-preview__content-wrapper h4, .editor-styles-wrapper .hike-preview__content-wrapper h5, .editor-styles-wrapper .hike-preview__content-wrapper h6, .editor-styles-wrapper .hike-preview__content-wrapper p {
+  color: var(--taupe);
+}
+.editor-styles-wrapper .hike-preview__location-wrapper {
+  display: block;
+  background-color: var(--forest-green-dark);
+  color: var(--taupe);
+  padding: 1.5rem;
+  text-align: center;
+}
+.editor-styles-wrapper .hike-preview__location-wrapper h4, .editor-styles-wrapper .hike-preview__location-wrapper p {
+  color: var(--taupe);
+}
+
+/*# sourceMappingURL=index.css.map*/

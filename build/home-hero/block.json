@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ridges/home-hero",
+  "version": "0.1.0",
+  "title": "Home Hero",
+  "category": "ridges",
+  "icon": "superhero-alt",
+  "description": "The home hero block is a special version of the hero with colorful paths and an image.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "home-hero",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "imageID": {
+      "type": "number",
+      "default": null
+    },
+    "imageURL": {
+      "type": "string",
+      "default": "https://source.unsplash.com/random?sig=event-preview"
+    },
+    "attribution": {
+      "type": "string",
+      "source": "html",
+      "selector": ".home-hero__img-attribution",
+      "placeholder": "Attribution (optional)"
+    }
+  }
+}

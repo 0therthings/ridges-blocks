@@ -1,0 +1,35 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ridges-heading-with-button {
+	background-color: var(--background-color);
+	padding: 2rem 0;
+}
+
+.heading-with-button__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heading-with-button__content .wp-block-heading {
+	margin-bottom: 0;
+	transform: translateY(2px);
+}
+
+.heading-with-button__content .wp-block-buttons {
+	flex-shrink: 0;
+}
+
+@media only screen and (min-width: 48rem) {
+
+	.wp-block-ridges-heading-with-button {
+		background-color: var(--background-color);
+		padding: 3rem 0;
+	}
+
+}
