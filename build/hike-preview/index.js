@@ -78,7 +78,7 @@ function Edit(props) {
     textColor: 'taupe'
   }], ['ridges/text-with-icon', {
     'iconID': 303,
-    'iconURL': 'http://localhost:8888/ridges/wp-content/uploads/2024/05/calendar-icon-sm.svg'
+    'iconURL': 'https://ridgesdev.wpenginepowered.com/wp-content/uploads/2024/05/calendar-icon-sm.svg'
   }, [['core/paragraph', {
     placeholder: 'Date information',
     style: {
@@ -129,7 +129,7 @@ function Edit(props) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
         onClick: open,
         className: "hike-preview__img hike-preview__img-placeholder",
-        src: "https://source.unsplash.com/random"
+        src: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
       });
     }
   }) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
@@ -166,7 +166,7 @@ function Edit(props) {
     onChange: meetInfo => setAttributes({
       meetInfo
     }),
-    multiline: true,
+    multiline: false,
     allowedFormats: ['core/bold', 'core/italic'],
     placeholder: "Ridges location..."
   }))));
@@ -267,6 +267,8 @@ function save(props) {
   let myClass;
   if (attributes.meetInfo) {
     myClass = `has-meeting-info`;
+  } else {
+    myClass = ``;
   }
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save({
     className: myClass
@@ -284,6 +286,7 @@ function save(props) {
     value: attributes.meetTitle
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
     tagName: "p",
+    className: "meetInfo",
     value: attributes.meetInfo
   })));
 }
@@ -360,7 +363,7 @@ module.exports = window["wp"]["i18n"];
   \*************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ridges/hike-preview","version":"0.1.0","title":"Hike Preview","category":"ridges","icon":"location-alt","description":"The hike preview block is a short synopsis to promote a hike and give potential attendees all the information they need to join. The block provides an photo, title, description, and button within a green container.","example":{},"supports":{"html":false},"textdomain":"hike-preview","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"imageID":{"type":"number","default":null},"imageURL":{"type":"string","default":"https://source.unsplash.com/random?sig=event-preview"},"meetTitle":{"type":"string","source":"html","selector":".hike-preview__location-wrapper h4","default":"Meets at"},"meetInfo":{"type":"string","source":"html","selector":".hike-preview__location-wrapper p","placeholder":"Ridges location..."}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ridges/hike-preview","version":"0.1.0","title":"Hike Preview","category":"ridges","icon":"location-alt","description":"The hike preview block is a short synopsis to promote a hike and give potential attendees all the information they need to join. The block provides an photo, title, description, and button within a green container.","example":{},"supports":{"html":false},"textdomain":"hike-preview","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"imageID":{"type":"number","default":null},"imageURL":{"type":"string","default":"https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"},"meetTitle":{"type":"string","source":"html","selector":".hike-preview__location-wrapper h4","default":"Meets at"},"meetInfo":{"type":"string","source":"html","selector":".hike-preview__location-wrapper p","placeholder":"Ridges location..."}}}');
 
 /***/ })
 

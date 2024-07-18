@@ -16,6 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .heading-with-button__content .wp-block-heading {
@@ -23,14 +25,15 @@
   transform: translateY(2px);
 }
 
-.heading-with-button__content .wp-block-buttons {
-  flex-shrink: 0;
-}
-
 @media only screen and (min-width: 48rem) {
   .wp-block-ridges-heading-with-button {
     background-color: var(--background-color);
     padding: 3rem 0;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .heading-with-button__content .wp-block-buttons {
+    flex-shrink: 0;
   }
 }
 

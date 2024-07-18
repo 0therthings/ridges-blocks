@@ -10,14 +10,6 @@
 	gap: 1.5rem;
 }
 
-// .simple-grid--mobile-2 {
-// 	grid-template-columns: repeat(2, 1fr);
-// }
-
-// .simple-grid--mobile-3 {
-// 	grid-template-columns: repeat(3, 1fr);
-// }
-
 // Spacing
 
 .weighted-grid.weighted-grid--spacing-0 {
@@ -48,19 +40,10 @@
 	gap: var(--wp--preset--spacing--70);
 }
 
-@media only screen and (min-width: 782px) {
+@media only screen and (min-width: 60rem) {
 
 	.weighted-grid {
 		grid-template-columns: repeat(2, 1fr);
-		// grid-template-rows: auto;
-		// grid-template-rows: repeat(auto, 50px);
-		// grid-auto-rows: 1fr;
-		// grid-template-rows: repeat(auto-fit, minmax(calc(25% - 1rem), 1fr));
-		// grid-auto-rows: 1fr;
-
-		// grid-template-rows: repeat(3, 1fr);
-		// grid-template-rows: repeat(calc(var(--grid-items, 4) - 1), 1fr);
-
 		grid-template-rows: repeat(3, min-content);
 		grid-template-rows: repeat(calc(var(--grid-items, 4) - 1), min-content);
 	}

@@ -53,7 +53,7 @@
   bottom: 0;
   right: 0;
   width: 37%;
-  height: 420px;
+  height: 900px;
   overflow: hidden;
 }
 
@@ -63,7 +63,7 @@
   z-index: 1;
   max-width: none;
   stroke-width: 37px;
-  bottom: -2rem;
+  bottom: -4rem;
 }
 
 .home-hero__path-1 {

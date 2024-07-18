@@ -61,7 +61,7 @@ export default function Edit(props) {
 		[ 'ridges/text-with-icon', 
 			{ 
 				'iconID': 303,
-				'iconURL': 'http://localhost:8888/ridges/wp-content/uploads/2024/05/calendar-icon-sm.svg'
+				'iconURL': 'https://ridgesdev.wpenginepowered.com/wp-content/uploads/2024/05/calendar-icon-sm.svg'
 			},
 			[
 				[ 'core/paragraph', 
@@ -127,7 +127,7 @@ export default function Edit(props) {
 				        	<img
 				        		onClick={ open }
 				        		className="hike-preview__img hike-preview__img-placeholder"
-				        		src="https://source.unsplash.com/random"
+				        		src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
 				        	/ >
 				        ) }
 				    >
@@ -167,7 +167,7 @@ export default function Edit(props) {
 					tagName="p"
 					value={attributes.meetInfo}
 					onChange={(meetInfo) => setAttributes({ meetInfo })}
-					multiline={true}
+					multiline={false}
 					allowedFormats={ [ 'core/bold', 'core/italic' ] }
 					placeholder="Ridges location..."
 				/>

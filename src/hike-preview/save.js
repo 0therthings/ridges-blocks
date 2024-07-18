@@ -26,6 +26,9 @@ export default function save(props) {
 	if(attributes.meetInfo) {
 		myClass = `has-meeting-info`;
 	}
+	else {
+		myClass = ``;
+	}
 	
 	return (
 		<div { ...useBlockProps.save({className: myClass}) }>
@@ -38,19 +41,9 @@ export default function save(props) {
 			<div className="hike-preview__content-wrapper">
 				<InnerBlocks.Content />
 			</div>
-{/*			{ attributes.meetInfo && ( 
-				<div className="hike-preview__location-wrapper">
-					<RichText.Content tagName="h4" value={ attributes.meetTitle } />
-					<RichText.Content tagName="p" value={ attributes.meetInfo } />
-				</div>
-				)
-			}*/}
 			<div className="hike-preview__location-wrapper">
 				<RichText.Content tagName="h4" value={ attributes.meetTitle } />
-{/*				<div className="hike-preview__meet-info">
-					{attributes.meetInfo}
-				</div>*/}
-				<RichText.Content tagName="p" value={ attributes.meetInfo } />
+				<RichText.Content tagName="p" className="meetInfo" value={ attributes.meetInfo } />
 			</div>
 		</div>
 	);
